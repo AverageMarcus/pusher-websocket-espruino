@@ -21,7 +21,7 @@ new Pusher(PUSHER_KEY, {}, function(pusher) {
 
 ## API
 
-### `Constructor`
+### Constructor
 
 `Pusher(appKey, options, callback)`
 
@@ -40,7 +40,7 @@ Callback:
 function(pusher) { ... }
 ```
 
-### `Pusher`
+### Pusher
 
 #### subscribe
 ```
