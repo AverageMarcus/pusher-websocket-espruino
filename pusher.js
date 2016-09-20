@@ -1,4 +1,4 @@
-var WebSocket = require('websocket');
+var WebSocket = require('ws');
 var ws;
 var pusher;
 
