@@ -3,8 +3,6 @@ A simple Pusher client for use on the Espruino
 
 ## :warning: Currently a work in progress :warning: 
 
-Requires the websocket module from this Pull Request: https://github.com/espruino/EspruinoDocs/pull/281
- 
 ## Example
  
 ```js
