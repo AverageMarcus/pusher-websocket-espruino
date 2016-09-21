@@ -64,12 +64,13 @@ function Pusher(key, options, cb) {
   pusher = this;
   options = options || {};
   this.key = key;
-  this.cluster = options.cluster || 'eu';
+  this.cluster = options.cluster;
   this.encrypted = false;
   this.connected = false;
   this.socketId = undefined;
   
-  ws = new WebSocket('ws-eu.pusher.com', {
+  var host = options.cluster ? 'ws-' + options.cluster + '.pusher.com' : 'ws.pusherapp.com';
+  ws = new WebSocket(host, {
     path: '/app/' + this.key + '?protocol=7&client=espruino-websocket&version=3.2.1'
   });
 
