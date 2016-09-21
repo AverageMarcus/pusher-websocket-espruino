@@ -4,11 +4,6 @@ A simple Pusher client for use on the Espruino
 ## :warning: Currently a work in progress :warning: 
 
 Requires the websocket module from this Pull Request: https://github.com/espruino/EspruinoDocs/pull/281
-
-Can be updated to use the following until the updated websocket module is available in the main repo:
-```js
-var WebSocket = require("https://github.com/AverageMarcus/espruino-websocket/blob/master/websocket.js");
-```
  
 ## Example
  
